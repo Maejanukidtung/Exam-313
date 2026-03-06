@@ -44,7 +44,7 @@
                 v-model="studentName"
                 outlined
                 label="ชื่อ-นามสกุล"
-                placeholder="เช่น ภาคิน อินแถลง"
+                placeholder="เช่น จักรพรรดิ์ เจริญ"
                 :disable="submitting"
                 @keyup.enter="addStudent"
               >
@@ -59,7 +59,7 @@
                 v-model="studentId"
                 outlined
                 label="รหัสนักศึกษา"
-                placeholder="เช่น 6604101365"
+                placeholder="เช่น 6604101313"
                 :disable="submitting"
                 @keyup.enter="addStudent"
               >
