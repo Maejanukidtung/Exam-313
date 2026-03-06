@@ -38,6 +38,10 @@ app.get('/api/demo', (req, res) => {
     });
 });
 
+app.get('/api/health', (req, res) => {
+    res.json({ ok: true });
+});
+
 // Error handling
 app.use((err, req, res, next) => {
     console.error(err.stack);

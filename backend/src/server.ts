@@ -61,6 +61,7 @@ app.use('/api/tasks', taskRoutes);
 
 // ✅ fallback 404 สำหรับทุก route ที่ไม่ match
 app.use((req, res) => {
+  console.log(`404 Not Found: ${req.method} ${req.originalUrl}`);
   res.status(404).json({
     message: 'ไม่พบเส้นทาง',
     path: req.originalUrl,

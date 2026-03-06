@@ -167,7 +167,7 @@ const fetchTasks = async () => {
   } catch (err) {
     console.error('API Error:', err);
     const status = err.response ? err.response.status : 'Network Error';
-    errorMessage.value = โหลดงานไม่สำเร็จ (${status});
+    errorMessage.value = `โหลดงานไม่สำเร็จ (${status})`;
     loadingErrorUrl.value = api.defaults.baseURL + '/tasks';
   } finally {
     loading.value = false;
@@ -196,7 +196,7 @@ const addStudent = async () => {
     // แสดงข้อความสำเร็จ
     $q.notify({
       type: 'positive',
-      message: เพิ่มข้อมูล ${studentName.value} สำเร็จ!,
+      message: `เพิ่มข้อมูล ${studentName.value} สำเร็จ!`,
       position: 'top',
       icon: 'check_circle',
     });
